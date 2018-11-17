@@ -1,4 +1,5 @@
 #!/bin/bash
+# OSX
 
 while true; do
 	BURN_DIR=/Volumes/KINGSTON/
