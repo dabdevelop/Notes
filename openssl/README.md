@@ -63,3 +63,17 @@ The next section shows a full example of what each key file should look like.
 
     $ sudo nginx -c /usr/local/etc/nginx/nginx.conf
     $ sudo nginx -s reload
+
+# openssl加解密
+
+加密：
+
+    openssl enc -e -a -aes-256-cbc  -in infile -out outfile
+
+解密：
+
+    openssl enc -d -a -aes-256-cbc -in infile -out outfile
+
+bruteforce：
+
+>https://github.com/glv2/bruteforce-salted-openssl
