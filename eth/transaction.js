@@ -16,10 +16,10 @@ web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/KcjYF
 var Tx = require('ethereumjs-tx');
 
 // Used to sign the transaction. Obviously you SHOULD better secure this than just plain text
-var privateKey = new Buffer('f5cd66de5b6b16ba3f4e7f0d7461f93bc3cd7372e2c0ede0f5a38e39fdc47fc3', 'hex');
+var privateKey = new Buffer('ae1fc2bb9348611fe0df19f62c67651f8e8aae3f5fcd3aa0e7f608f2e383d73d', 'hex');
 
  // The reciviing address of the transaction
-var receivingAddr = ('0xA8e28d9547760647fd7c6017ab4aaf39412B54BF');
+var receivingAddr = ('0x2db37aafbb4be2ec5f5c2e07350217726869c53f');
 
 // Value to be sent, converted to wei and then into a hex value
 var txValue = web3.utils.numberToHex(web3.utils.toWei('0.0001', 'ether'));
