@@ -1,10 +1,3 @@
-title: Markdown
-author: Feng Tao
-tags:
-  - Useful Tool
-categories: []
-date: 2017-01-12 17:05:00
----
 # Markdown Syntax Reference
 
 From [http://daringfireball.net/projects/markdown/](http://daringfireball.net/projects/markdown/)
