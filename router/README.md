@@ -332,6 +332,20 @@
     sh int trunk
     sh int f1/3 switchport
 
+    conf t
+    vtp mode [ server | client | transparent ]
+    vtp domain <domain-name>
+    vtp password <password>
+    vtp pruning
+    end
+
+    sh vtp status
+
+    switchport mode { access | dynamic { auto | desirable } | trunk}
+    
+    sh int f0/0 [ switchport | trunk ]
+    sh vlan [ brief | id <vlan-id> | name <vlan-name> ]
+
 ## SW
 
     cont t
