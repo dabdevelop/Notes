@@ -109,12 +109,18 @@
 
 ## reset password
 
-    ctrl + break
-    Confreg 0x2142
-    Confreg 0x2102
+    reboot and ctrl + break
+    confreg 0x2142
     reset
-    conf t
-    config-register 0x2142
+    enable
+    copy start run
+    enable secret xxxxx
+    confreg 0x2102
+    copy run start
+    end
+
+## boot from flash
+
     sh version
     boot system flash xxxx.bin
     boot system tftp xxxx.bin x.x.x.x
